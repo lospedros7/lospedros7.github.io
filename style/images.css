@@ -1,0 +1,20 @@
+.rounded-image {
+    border-radius: 10%;
+    border-image-width: 15px;
+    border-color: black;
+    border: 15px solid #B3EFB2;
+    position: absolute;
+    top: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+
+
+}
+
+.back-rect {
+    margin-left: 0px;
+    top:100px;
+    width: 120%;
+    height: 300px;
+    background: #b7f5b67a;
+    position: relative;
+}
