@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #f7f4f4;">
-    <header>
+<body style="background-color: #f7f6f4cb;">
+    <img src="image/niebo.jpg" style="position:absolute; margin-right:none; top: 0px; width: 100%; z-index: -3; opacity: 10%;">
+    <!---<header>
         <div class="waveTextAnimated">
             <span>K</span>
             <span>O</span>
@@ -32,7 +34,7 @@
             <span>E</span>
         </div>
         <h2>na świecie</h2>
-    </header>
+    </header>-->
     <nav style="background-color: #fcefa6;">
         <ul>
             <li><a href="index.html">Strona główna</a></li>
@@ -44,12 +46,18 @@
         </ul>
     </nav>
     <main style="margin-left: 0em;">
+        <div style="position:absolute; top: 80%; left: 8%;">
+        <button id="oblicz" class="kalk">Oblicz</button>
+        <input id="wysokosc" class="kalk" type="text" placeholder="Wysokość" >
+        <input id="srednica" class="kalk" type="text" placeholder="Średnica">
+        </div>
+        <p id="wynik" style="position:absolute; top: 42%; left: 8%; font-family: 'Roboto', sans-serif; font-weight: 900; color:#fff; font-size: 150px;">1000 cm^3</p>
         <section>
-            <p class="duze" style="font-family: 'Roboto', sans-serif;">Ta strona ma na celu zwrócenie uwagi na różnorodność i piękno kolb chemicznych w naszym świecie. Zapraszam do zwiedzania!</p>
-            <div style="position:absolute; right: 10%; bottom: 12%; font-size: 20px;">
+            <p class="duze" style="position: absolute; font-family: 'Roboto', sans-serif; top: 12%;">Ta strona ma na celu zwrócenie uwagi na różnorodność i piękno kolb chemicznych w naszym świecie. Zapraszam do zwiedzania!</p>
+            <div style="position:absolute; right: 8%; bottom: 10%; font-size: 20px;">
             <p class="roboto-light">Obok znajduje się kalkulator objętości<br></p>
             <p class="roboto-light">dowolnej kolby chemicznej w kształcie cylindra.<br></p>
-            <p class="roboto-light">Wystarczy wpisać powierzchnię dna i wysokość,<br></p> 
+            <p class="roboto-light">Wystarczy wpisać średnicę i wysokość,<br></p> 
             <p class="roboto-light">a następnie kliknąć przycisk 'Oblicz'.<br></p>
             </div>
         </section>
@@ -59,7 +67,7 @@
         font-family: 'Roboto', sans-serif;">Kalulator objętości kolby</p>-->
         <p style="position: absolute; bottom: 1%; color:gray; margin-bottom: 0em; margin-left: 1em;">Strona jest przygotowana do wyświetlania na ekranach 1920x1080 w przeglądarce Mozilla Firefox Snap 111.0.1 (64 bit) for Ubuntu cannonical-002 - 1.0 </p>
     </main>
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style/waves.css">
     
     <div class="header" style="position:absolute; width: 100%; bottom:53%; z-index: -3;">
