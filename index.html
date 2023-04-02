@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: E8F1F2;">
+<body style="background-color: #f7f4f4;">
     <header>
         <div class="waveTextAnimated">
             <span>K</span>
@@ -33,28 +33,72 @@
         </div>
         <h2>na świecie</h2>
     </header>
-    <nav>
+    <nav style="background-color: #fcefa6;">
         <ul>
             <li><a href="index.html">Strona główna</a></li>
             <li><a href="zwykle.html">Kolby zwykłe</a></li>
             <li><a href="glinowe.html">Kolby glinowe</a></li>
             <li><a href="potasowe.html">Kolby potasowe</a></li>
-            <li><a href="wapienne.html">Kolby cynowe</a></li>
+            <li><a href="cynowe.html">Kolby cynowe</a></li>
             <li><a href="wapienne.html">Kolby wapienne</a></li>
         </ul>
     </nav>
     <main style="margin-left: 0em;">
         <section>
-            <h2>Witaj na stronie "Kolby chemiczne na świecie"!</h2>
-            <p class="duze">Ta strona ma na celu zwrócenie uwagi na różnorodność i piękno kolb chemicznych w naszym świecie. Zapraszam do zwiedzania!</p>
-            <p class="duze">Poniżej znajduje się kalkulator objętości dowolnej kolby chemicznej w kształcie cylindra. Wystarczy wpisać <br>
-                powierzchnię dna i wysokość, a następnie kliknąć przycisk 'Oblicz'.</p>
+            <p class="duze" style="font-family: 'Roboto', sans-serif;">Ta strona ma na celu zwrócenie uwagi na różnorodność i piękno kolb chemicznych w naszym świecie. Zapraszam do zwiedzania!</p>
+            <div style="position:absolute; right: 10%; bottom: 12%; font-size: 20px;">
+            <p class="roboto-light">Obok znajduje się kalkulator objętości<br></p>
+            <p class="roboto-light">dowolnej kolby chemicznej w kształcie cylindra.<br></p>
+            <p class="roboto-light">Wystarczy wpisać powierzchnię dna i wysokość,<br></p> 
+            <p class="roboto-light">a następnie kliknąć przycisk 'Oblicz'.<br></p>
+            </div>
         </section>
-        <div class="back-rect" style="position: absolute; background: #96e9ed7e; height: 300px; top:60%"></div>
-        <img src="image/glass.jpg" alt="Szkła chemiczne" class="rounded-image"
-        style="height: 320px; width: 500px; right: 8%; top: 57%; border: 15px solid #96e9ed">
+        <!---<img src="image/glass.jpg" alt="Szkła chemiczne" class="rounded-image"
+        style="height: 320px; width: 500px; right: 8%; top: 57%; border: 15px solid #96e9ed">-->
+        <!---<p class="works_title" style="position:absolute; right:60%; top:50%; font-size: 40px; 
+        font-family: 'Roboto', sans-serif;">Kalulator objętości kolby</p>-->
         <p style="position: absolute; bottom: 1%; color:gray; margin-bottom: 0em; margin-left: 1em;">Strona jest przygotowana do wyświetlania na ekranach 1920x1080 w przeglądarce Mozilla Firefox Snap 111.0.1 (64 bit) for Ubuntu cannonical-002 - 1.0 </p>
     </main>
     <!--<script src="script.js"></script>-->
+    <link rel="stylesheet" href="style/waves.css">
+    
+    <div class="header" style="position:absolute; width: 100%; bottom:53%; z-index: -3;">
+    
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(230, 110, 40,0.7)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(230,200,130,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(205, 73, 40,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(235,233,160,0.3)" />
+                </g>
+            </svg>
+        </div>
+    
+    </div>
+    <h1 class="main-title" style="z-index:-2;">Kolby chemiczne</h1>
+    <div class="header" style="position:absolute; width: 100%; bottom:50%; z-index: -1;">
+    
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(230, 110, 40,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(230,200,130,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="6" fill="rgba(205, 73, 40,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(235,233,160,0.3)" />
+                </g>
+            </svg>
+        </div>
+    
+    </div>
+    <div style="position:absolute; z-index:-2; width:100%; height:50%; bottom:0%; background-color: #e3aa70;"></div>
 </body>
 </html>

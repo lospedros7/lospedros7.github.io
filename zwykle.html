@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style/header-anim.css">
     <link rel="stylesheet" href="style/images.css">
 </head>
+
 <body>
     <header>
         <div class="waveTextAnimated">
@@ -26,26 +28,27 @@
             <span>E</span>
         </div>
     </header>
-    <nav style="background-color: #B3EFB2;">
+    <nav style="background-color: #ebe9a0;">
         <ul>
             <li><a href="index.html">Strona główna</a></li>
             <li><a href="zwykle.html">Kolby zwykłe</a></li>
             <li><a href="glinowe.html">Kolby glinowe</a></li>
-            <li><a href="pingwiny.html">Kolby potasowe</a></li>
-            <li><a href="pandy.html">Kolby cynowe</a></li>
-            <li><a href="rekin.html">Kolby wapienne</a></li>
+            <li><a href="potasowe.html">Kolby potasowe</a></li>
+            <li><a href="cynowe.html">Kolby cynowe</a></li>
+            <li><a href="wapienne.html">Kolby wapienne</a></li>
         </ul>
     </nav>
     <main>
         <section>
             <h2>Wprowadzenie</h2>
             <p class="duze">Kolby chemiczne to podstawowe narzędzie laboratoryjne, <br>
-            które służy do przeprowadzania reakcji chemicznych, prowadzenia<br>
-            destylacji, reakcji z użyciem ciepła oraz prowadzenia syntezy i otrzymywania związków chemicznych</p>
-            <div class="back-rect"></div>
-            <img src="image/sue.webp" alt="Dr Sue McCacen syntetyzująca Cu2SO4" class="rounded-image">
+                które służy do przeprowadzania reakcji chemicznych, prowadzenia<br>
+                destylacji, reakcji z użyciem ciepła oraz prowadzenia syntezy i otrzymywania związków chemicznych</p>
+            <div class="back-rect" style="position:absolute; top: 53%; background: #e9e7a9de;"></div>
+            <img src="image/sue.webp" alt="Synteza 1,2-wodoro-wapna palonego" class="rounded-image"
+                style="left: 5%; top: 49%; border: 15px solid #ebe9a0; width: 500px">
         </section>
-        <div class="lewo">
+        <div class="prawo" style="position:absolute; top: 56%; right: 6%;">
             <h2 style="font-size: 25px;">Zastosowanie</h2>
             <ul style="font-size: 20px; font-style: italic;">
                 <li>Produkcja substancji chemicznych</li>
@@ -53,12 +56,40 @@
                 <li>Funkcja rekreacyjna</li>
             </ul>
         </div>
-        <div class="prawo">
+        <div style="position: absolute;left: 36%; top:56%">
             <h2 style="font-size: 25px;">Porównanie do innych kolb</h2>
-            <p style="font-size: 20px;">Kolby zwykłe są jedynymi kolbami zbudowanymi ze szkła. <br>Widać zachodzące w nich reakcje i posiadają najwięcej <br>zastosowań
-            Pozostałe rodzaje kolb są specjalistyczne <br> i zwykle mają tylko jeden rodzaj zastosowania <br>ale również większe możliwości</p>
-            </div>
+            <p style="font-size: 20px;">Kolby zwykłe są jedynymi kolbami zbudowanymi ze szkła. <br>Widać zachodzące w
+                nich reakcje i
+                posiadają najwięcej <br>zastosowań
+                Pozostałe rodzaje kolb są specjalistyczne <br> i zwykle mają tylko jeden rodzaj zastosowania <br>ale
+                również większe
+                możliwości</p>
+        </div>
     </main>
     <script src="script.js"></script>
+
+
+    <link rel="stylesheet" href="style/waves.css">
+
+    <div class="header" style="position:absolute; width: 100%; bottom:0%">
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(230, 110, 40,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(230,200,130,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(205, 73, 40,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(235,233,160,0.3)" />
+                </g>
+            </svg>
+        </div>
+
+    </div>
 </body>
+
 </html>
